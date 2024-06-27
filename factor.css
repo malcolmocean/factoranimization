@@ -1,0 +1,15 @@
+body { font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; font-size: 16px; color: #999;}
+div, canvas, button { padding: 0; margin: 0; }
+button { line-height: 0; padding: 0px 4px 0px 4px; display: inline; border-radius: 5px; }
+button.on { border: solid 1px #606060; background: #606060; }
+button.off { border: solid 1px #eee; background: #eee; }
+button:focus { outline: none !important; }
+#enchilada { position: absolute; left: 0; right: 0; top: 0; bottom: 0; }
+#frame { position: absolute; left: 0; right: 0; top: 0; bottom: 0; min-width: 350px; min-height: 350px; background: #ffffff }
+#status1, #status2 { position: absolute; top: 10px; left: 15px; color: #000000; }
+#controls { position: absolute; bottom: 10px; right: 20px; }
+#canvas { position: absolute; top: 50%; left: 50%; margin-top: -150px; margin-left: -150px; }
+#error { position: absolute; top: 40%; left: 50%; width: 300px; margin-left: -150px; font-size: 20px; font-weight: bold; z-index: 1 }
+#credits { position: absolute; bottom: 10px; left: 15px; width: 450px; max-width: 50%}
+.number { font-size: 28px }
+.decomposition { font-size: 16px; padding-left: 1px; }
