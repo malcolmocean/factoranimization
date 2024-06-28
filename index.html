@@ -21,7 +21,7 @@
 <link rel="canonical" href="http://www.datapointed.net/visualizations/math/factorization/animated-diagrams/">
 	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 </head>
-<body style="width: 100%; height: 100%">
+<body style="width: 100%; height: 100%; background: black">
 <div id="enchilada">
 
 <div id="frame">
@@ -34,6 +34,12 @@
 <button type="button" id="play_forward" class="on" style=""><canvas width="30" height="30"></canvas></button>
 <button type="button" id="fast_forward" class="off"><canvas width="30" height="30"></canvas></button>
 </div>
+<script>
+	if (window.location.search.includes("dark")) {
+	  document.getElementById('frame').style.background = 'black'
+		document.getElementsByName('button').style.background = '#333'
+	}
+</script>
 <div id="credits">
 	<a href="http://www.datapointed.net/visualizations/math/factorization/animated-diagrams/" target="_blank">(Original)</a>
 	<span>This version modified by Malcolm Ocean to use custom ?speed=1 parameter in url. Favorites: <a href="?speed=0.3">0.3</a>, <a href="?speed=10">10</a></span>

@@ -1,8 +1,8 @@
 body { font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; font-size: 16px; color: #999;}
 div, canvas, button { padding: 0; margin: 0; }
 button { line-height: 0; padding: 0px 4px 0px 4px; display: inline; border-radius: 5px; }
-button.on { border: solid 1px #606060; background: #606060; }
-button.off { border: solid 1px #eee; background: #eee; }
+button.on { border: solid 1px white; background: #606060; }
+button.off { border: solid 1px #8883; background: #8883; }
 button:focus { outline: none !important; }
 #enchilada { position: absolute; left: 0; right: 0; top: 0; bottom: 0; }
 #frame { position: absolute; left: 0; right: 0; top: 0; bottom: 0; min-width: 350px; min-height: 350px; background: #ffffff }
