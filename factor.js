@@ -259,7 +259,9 @@ function Q() {
 }
 window.start = function () {
   const urlParams = new URLSearchParams(window.location.search)
-  const default_speed = urlParams.has('speed') ? parseFloat(urlParams.get('speed')) : 1
+  const bpm = urlParams.has('bpm') ? parseFloat(urlParams.get('bpm')) : 0
+  // 120 => 121 actually, 60 => 60.5...  this isn't exactly right but it's enough to feel okay
+  const default_speed = bpm ? bpm/60.5 : urlParams.has('speed') ? parseFloat(urlParams.get('speed')) : 1
   canvas = document.getElementById("canvas");
   if (!canvas.getContext || !canvas.getContext("2d")) {
     var a = document.getElementById("frame"),
