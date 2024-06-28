@@ -25,8 +25,8 @@
 <div id="enchilada">
 
 <div id="frame">
-<div id="status1" style="opacity: 0.001;"><span class="number">220</span><br><span class="decomposition">11<span class="times">×</span>5<span class="times">×</span>2<span class="times">×</span>2</span></div>
-<div id="status2" style="opacity: 0.7;"><span class="number">221</span><br><span class="decomposition">17<span class="times">×</span>13</span></div>
+<div id="status1"></div>
+<div id="status2"></div>
 <div id="controls">
 <button type="button" id="fast_backward" class="off"><canvas width="30" height="30"></canvas></button>
 <button type="button" id="play_backward" class="off"><canvas width="30" height="30"></canvas></button>
@@ -37,7 +37,8 @@
 <script>
 	if (window.location.search.includes("dark")) {
 	  document.getElementById('frame').style.background = 'black'
-		document.getElementsByName('button').style.background = '#333'
+	  document.getElementById('status1').style.color = 'white'
+	  document.getElementById('status2').style.color = 'white'
 	}
 </script>
 <div id="credits">
